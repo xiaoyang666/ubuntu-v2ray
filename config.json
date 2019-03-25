@@ -1,0 +1,44 @@
+{
+  "inbound": {
+    "port": !!!!!,  // SOCKS 代理端口，在浏览器中需配置代理并指向这个端口
+    "listen": "127.0.0.1",
+    "protocol": "socks",
+    "domainOverride": ["tls","http"], 
+    "settings": {
+      "auth": "noauth",  
+      "udp": true
+    }
+  },
+  "outbound": {
+    "protocol": "vmess",
+    "settings": {
+      "vnext": [
+        {
+          "address": "!!!!!!!!!!!!!", // 服务器地址
+          "port": !!!!!,   //端口
+          "users": [
+            {
+              "id": "!!!!!!",  //UUID，与服务端保持一致
+              "alterId": !!!!!   // 此处的值也应当与服务器相同
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "mkcp",  //network: 网络的选择，要像配置中写成 kcp 或 mkcp 才会启用 mKCP
+      "kcpSettings": {
+        "mtu": 1350,
+        "tti": 20,
+        "uplinkCapacity": 5,
+        "downlinkCapacity": 100,
+        "congestion": true,
+        "readBufferSize": 1,
+        "writeBufferSize": 1,
+        "header": {
+          "type": "none"
+        }
+      }
+    }
+  }
+}
