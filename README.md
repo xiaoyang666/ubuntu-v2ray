@@ -25,10 +25,11 @@ ubuntu-v2ray科学上网
 
    $sudo gedit /etc/v2ray/config.json
 
-    config.json 的模板文件
+    config.json 的模板文件在文件夹下已经分享了
 
    运行 service v2ray start 来启动 V2Ray 进程；
     之后可以使用 service v2ray start|stop|status|reload|restart|force-reload 控制 V2Ray 的运行。
-
-
+   在配置之后你的命令行就可以美美的连接了！
+   如果需要浏览器玩一玩，最好使用Chrome和Firefox浏览器，因为我们需要下载插件 SwitchyOmege，Chrome上叫做 Proxy SwichyOmega，应用商店下载就行
+   在此推荐火狐，因为我遇到的google应用商店已经崩掉了，浏览器代理也是一堆，在此不在赘述。
 
