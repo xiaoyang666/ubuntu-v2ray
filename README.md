@@ -1,3 +1,4 @@
+ubuntu-v2ray科学上网
 之前需要用命令行下载国外的package，ubuntu用的人比较少，基本都是win下的，为了能在Ubuntu下科学上网，我SSR，SSS，VPS都买了，还是推荐买VPS,有几篇博文也是比较坑，我基本都踩过了。其中对于小白来说，config.json的配置是,是比较困难的，所以特地写一篇作为小白的我的踩坑日记，在linux上用的SSR和SS最近封IP的比较多，此处不便推荐我用的是VPS服务器
 
 1.VPS服务器
